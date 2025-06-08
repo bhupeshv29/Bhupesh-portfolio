@@ -1,16 +1,17 @@
-"use client"
+"use client";
+
 import { cva, type VariantProps } from "class-variance-authority";
 import {
   motion,
   MotionProps,
+  MotionValue,
   useMotionValue,
   useSpring,
   useTransform,
-  MotionValue,
-} from "framer-motion";
+} from "motion/react";
 import React, { PropsWithChildren, useRef } from "react";
 
-import { cn } from "../../../lib/utils";
+import { cn } from "@/lib/utils";
 
 export interface DockProps extends VariantProps<typeof dockVariants> {
   className?: string;

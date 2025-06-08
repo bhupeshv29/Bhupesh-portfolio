@@ -5,7 +5,8 @@ import {
   FaGithub,
   FaHome,
 } from "react-icons/fa";
-import { Dock, DockIcon } from "./magicui/dock";
+import { Dock, DockIcon } from "../../components/magicui/dock";
+import Link from "next/link";
 
 export default function SocialDockComponent() {
   return (
@@ -17,9 +18,9 @@ export default function SocialDockComponent() {
         className="bg-black border-gray-400"
       >
         <DockIcon>
-          <a href="/" className="text-slate-300">
+          <Link href="/" className="text-slate-300">
             <FaHome className="text-2xl" />
-          </a>
+          </Link>
         </DockIcon>
 
         <span className="text-gray-400 mx-1 text-sm">|</span>
