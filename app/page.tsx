@@ -20,7 +20,16 @@ function Home() {
           I’m a full-stack developer from India. 
           I love turning ideas into working web apps. Whether you need help building a new project or improving an old one, I’m here to write clean and simple code to make your ideas real.
         </p>
-         <RainbowButton variant="outline" size="lg">Resume</RainbowButton>
+        <div>
+          <a
+            href="https://drive.google.com/file/d/1WkfJkp0flwovUnkKUL2jbdsvSTWKBYa7/view?usp=drive_link"
+            target="_blank"
+            download="bhupesh_resume.pdf"
+          >
+            <RainbowButton  variant="outline" size="lg">Resume</RainbowButton>
+          </a>
+         
+        </div>
 
         
       </div>
