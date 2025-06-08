@@ -1,5 +1,7 @@
 import ProjectsComponent from "./components/Projects";
 import SkillsComponent from "./components/Skills";
+import { RainbowButton } from "@/components/magicui/rainbow-button";
+
 
 function Home() {
 
@@ -18,12 +20,22 @@ function Home() {
           I’m a full-stack developer from India. 
           I love turning ideas into working web apps. Whether you need help building a new project or improving an old one, I’m here to write clean and simple code to make your ideas real.
         </p>
+         <RainbowButton >Resume</RainbowButton>
+
+        
       </div>
     </div>     
 
   </div>    
     <ProjectsComponent/>
     <SkillsComponent/>
+    <div className="container mx-auto px-6 text-center">
+      <p>© {new Date().getFullYear()} Bhupesh.dev. All rights reserved.</p>
+      <span className="my-2">Made with ❤️ by Bhupesh Verma</span>
+
+    </div>
+
+     
 
 </div>
 
