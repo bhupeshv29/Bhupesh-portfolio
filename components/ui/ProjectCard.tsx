@@ -35,7 +35,7 @@ export default function ProjectCardComponent({
         />
       </CardHeader>
       <CardContent className="p-4">
-        <h3 className="text-xl font-semibold mb-2">{title}</h3>
+        <h3 className="text-xl font-semibold mb-2  text-blue-500">{title}</h3>
         <p className="text-sm mb-4">{description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {technologies.map((tech, index) => (
