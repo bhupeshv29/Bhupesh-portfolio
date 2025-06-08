@@ -1,3 +1,5 @@
+"use client";
+
 import {
   FaEnvelope,
   FaTwitter,
@@ -5,10 +7,10 @@ import {
   FaGithub,
   FaHome,
 } from "react-icons/fa";
-import { Dock, DockIcon } from "../../components/magicui/dock";
+import { Dock, DockIcon } from "./magicui/dock";
 import Link from "next/link";
 
-export default function SocialDockComponent() {
+export default function SocialDock() {
   return (
     <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 z-50  ">
       <Dock
@@ -27,7 +29,7 @@ export default function SocialDockComponent() {
 
         <DockIcon>
           <a
-            href="mailto:bhupeshverma29bv@gmail.com"
+            href="mailto:rbh97995@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >

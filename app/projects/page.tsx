@@ -1,4 +1,4 @@
-import ProjectsComponent from "../components/Projects"
+import ProjectsComponent from "../../components/Projects"
 
 
 

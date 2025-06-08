@@ -1,11 +1,10 @@
-import ProjectsComponent from "./components/Projects";
-import SkillsComponent from "./components/Skills";
+
+import ProjectsComponent from "@/components/Projects";
+import SkillsComponent from "@/components/Skills";
 import { RainbowButton } from "@/components/magicui/rainbow-button";
 
 
 function Home() {
-
-  
 
   return (
    <div className="min-h-screen flex flex-col justify-center items-center">
@@ -48,12 +47,7 @@ function Home() {
 
 </div>
 
-//   <div className="container mx-auto px-6 text-center">
-//     <p>© {new Date().getFullYear()} Bhupesh.dev. All rights reserved.</p>
-//   </div>
-// </footer>
-//       </div>
-  );
+ );
 }
 
 export default Home;
