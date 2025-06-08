@@ -20,7 +20,7 @@ function Home() {
           I’m a full-stack developer from India. 
           I love turning ideas into working web apps. Whether you need help building a new project or improving an old one, I’m here to write clean and simple code to make your ideas real.
         </p>
-         <RainbowButton >Resume</RainbowButton>
+         <RainbowButton variant="outline" size="lg">Resume</RainbowButton>
 
         
       </div>
