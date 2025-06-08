@@ -20,7 +20,7 @@ function Home() {
             </p>
             <div>
               <a
-                href="https://drive.google.com/file/d/1WkfJkp0flwovUnkKUL2jbdsvSTWKBYa7/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1lOP0YIaOi1GBSab2-0Q3vZm9VD-xqHTs/view?usp=drive_link"
                 target="_blank"
                 download="bhupesh_resume.pdf"
               >
