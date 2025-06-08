@@ -1,5 +1,6 @@
 // components/ui/ProjectCard.tsx
 import React from "react";
+import Image from "next/image";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -24,10 +25,13 @@ export default function ProjectCardComponent({
   return (
     <Card className="bg-gradient-to-r from-[#0b1016] to-[#3d3e41] text-white rounded-lg shadow-md transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg motion-safe:animate-fadeIn">
       <CardHeader>
-        <img
+        <Image
           src={image}
           alt={title}
+          width={600}
+          height={192}
           className="w-full h-48 object-cover rounded-t-lg"
+          style={{ width: "100%", height: "12rem" }}
         />
       </CardHeader>
       <CardContent className="p-4">

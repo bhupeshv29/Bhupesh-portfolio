@@ -14,8 +14,7 @@ export default function SocialDock() {
   return (
     <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 z-50  ">
       <Dock
-        magnification={80}
-        distance={100}
+        iconMagnification={80}
         direction="middle"
         className="bg-black border-gray-400"
       >

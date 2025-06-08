@@ -9,7 +9,7 @@ function Home() {
         <div className="container mx-auto px-6 flex justify-center items-center">
           <div className="max-w-3xl text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-              Hi, I'm Bhupesh Verma
+              Hi, I&#39;m Bhupesh Verma
               <span className="block text-blue-600">Full Stack Developer</span>
             </h1>
             <p className="text-xl text-slate-400 mb-8">
