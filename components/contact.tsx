@@ -29,7 +29,7 @@ export default function SocialDock() {
 
         <DockIcon>
           <a
-            href="mailto:rbh97995@gmail.com"
+            href="mailto:bhupeshverma29bv@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
