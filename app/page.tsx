@@ -32,11 +32,11 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="mx-30">
-      <ProjectsComponent />
+      <div className="px-4 md:px-8 lg:px-30">
+        <ProjectsComponent />
       </div>
-      <div className="mx-30">
-      <SkillsComponent />
+      <div className="px-4 md:px-8 lg:px-30">
+        <SkillsComponent />
       </div>
       <div className="container mx-auto px-6 text-center">
         <p>© {new Date().getFullYear()} Bhupesh.dev. All rights reserved.</p>
