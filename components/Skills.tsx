@@ -29,7 +29,7 @@ const SkillsComponent = () => {
         ].map((item, index) => (
           <div
             key={index}
-            className="bg-gradient-to-r from-[#0b1016] to-[#3d3e41] text-white p-5 rounded-lg shadow-md transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg motion-safe:animate-fadeIn"
+            className="bg-gradient-to-r from-[#0b1016] to-[#010151] text-white p-5 rounded-lg shadow-md transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg motion-safe:animate-fadeIn"
           >
             <h3 className="font-bold text-lg mb-2 text-blue-500">{item.title}:</h3>
             <p className="text-sm">{item.skills}</p>

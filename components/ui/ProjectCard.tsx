@@ -1,4 +1,3 @@
-// components/ui/ProjectCard.tsx
 import React from "react";
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -23,7 +22,7 @@ export default function ProjectCardComponent({
   liveLink,
 }: ProjectProps) {
   return (
-    <Card className="bg-gradient-to-r from-[#0b1016] to-[#3d3e41] text-white rounded-lg shadow-md transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg motion-safe:animate-fadeIn">
+    <Card className="bg-gradient-to-r from-[#0b1016] to-[#010151] text-white rounded-lg shadow-md transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg motion-safe:animate-fadeIn">
       <CardHeader>
         <Image
           src={image}
