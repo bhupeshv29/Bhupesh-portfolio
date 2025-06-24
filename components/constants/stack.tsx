@@ -6,26 +6,23 @@ import {
   SiExpress,
   SiFirebase,
   SiJavascript,
-  SiMui,
+
   SiNextdotjs,
   SiNginx,
   SiNodedotjs,
   SiPrisma,
   SiReact,
-  SiStyledcomponents,
+
   SiTailwindcss,
   SiTypescript,
   // new icons
-  SiKeras,
-  SiTensorflow,
+
   SiCplusplus,
   SiBun,
-  SiC,
+
   SiPython,
-  SiSolidity,
+
   SiHtml5,
-  SiFlask,
-  SiArchlinux,
   SiMongodb,
 } from "react-icons/si";
 
