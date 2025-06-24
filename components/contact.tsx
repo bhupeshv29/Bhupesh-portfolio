@@ -38,7 +38,7 @@ export default function SocialDock() {
 
         <DockIcon>
           <a
-            href="https://x.com/Bhupesh_29"
+            href="https://x.com/Bhupeshv29"
             target="_blank"
             rel="noopener noreferrer"
           >
