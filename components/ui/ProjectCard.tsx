@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-
+import { RainbowButton } from "../magicui/rainbow-button";
 
 interface ProjectProps {
   title: string;
@@ -47,16 +46,13 @@ export default function ProjectCardComponent({
           ))}
         </div>
         <div className="flex gap-2">
-          <Button asChild variant="secondary" className="text-xs">
-            <a href={githubLink} target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
-          </Button>
-          <Button asChild variant="default" className="text-xs">
-            <a href={liveLink} target="_blank" rel="noopener noreferrer">
-              Live
-            </a>
-          </Button>
+          <a href={githubLink} target="_blank" rel="noopener noreferrer">
+            <RainbowButton variant="outline">GitHub</RainbowButton>
+          </a>
+
+          <a href={liveLink} target="_blank" rel="noopener noreferrer">
+            <RainbowButton>Live</RainbowButton>
+          </a>
         </div>
       </CardContent>
     </Card>
