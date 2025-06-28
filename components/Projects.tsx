@@ -1,6 +1,8 @@
 import React from "react";
 import ProjectCardComponent from "./ui/ProjectCard";
 
+
+
 const projects = [
   {
     title: "Course Selling App",
@@ -52,9 +54,9 @@ export default function ProjectsComponent() {
   return (
     <section id="projects" className="py-16">
       <div className="container px-6">
-        <h2 className="text-3xl font-bold flex justify-center">Featured Projects</h2>
+        <h2 className="text-3xl font-bold flex justify-center mb-10">Featured Projects</h2>
         <br />
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           {projects.map((project, index) => (
             <ProjectCardComponent key={index} {...project} />
           ))}

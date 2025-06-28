@@ -3,6 +3,7 @@ import Marquee from "react-fast-marquee";
 import { BACKEND_STACKS, FRONTEND_STACKS, stacksProps } from "./constants/stack";
 
 
+
 const Skillsliding = () => {
   return (
     <section aria-label="skills" className="my-4 space-y-8 bg-background">
