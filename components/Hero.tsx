@@ -40,7 +40,7 @@ const Hero = () => {
             </p>
             <div>
               <a
-                href="https://drive.google.com/file/d/1lOP0YIaOi1GBSab2-0Q3vZm9VD-xqHTs/view?usp=sharing"
+                href="https://drive.google.com/file/d/1gEq0f_ZLuW5ugwf-GmsvMoFcFVwaOVXg/view?usp=sharing"
                 target="_blank"
                 download="bhupesh_resume.pdf"
               >
