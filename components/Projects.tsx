@@ -49,7 +49,7 @@ const projects = [
     image: "/chatapp.jpg",
     technologies: ["React", "TypeScript", "websocket", "Tailwind"],
     githubLink: "https://github.com/bhupeshv29/chatting.git",
-    liveLink: "https://chatting.bhupesh.site/",
+    liveLink: "https://chatting-nu-five.vercel.app/",
   },
   {
     title: "Infinite Brain",
@@ -67,7 +67,7 @@ const projects = [
     image: "/npm.jpg",
     technologies: ["Turborepo", "Nextjs", "Express", "Prisma", "Websocket"],
     githubLink: "https://github.com/bhupeshv29/Create-turboquick-app.git",
-    liveLink: "https://turboquick.bhupesh.site/",
+    liveLink: "https://turbo-web-eight.vercel.app/",
   },
 ];
 
