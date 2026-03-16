@@ -8,7 +8,7 @@ const SkillsComponent = () => {
         {[
           {
             title: "Languages",
-            skills: "TypeScript, JavaScript, Python, Java, C++, SQL",
+            skills: "TypeScript, JavaScript, Python, C++, SQL",
           },
           { title: "Backend", skills: "Node.js, Express.js, REST APIs" },
           {
