@@ -5,5 +5,6 @@
  ```
  - blogs integration
  - CP Contest integration (or cp problem tracker)
- - etc. 
+ - open source contribution link 
+ -  etc. 
  ```
