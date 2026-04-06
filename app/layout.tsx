@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Bhupesh verma",
-  description: "Bhupesh verma's portfolio",
+  description: "Bhupesh verma 's portfolio",
 };
 
 export default function RootLayout({
@@ -30,7 +30,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <SocialDock />
-
         {children}
         <Analytics />
       </body>
