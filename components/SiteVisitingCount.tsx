@@ -6,6 +6,9 @@ async function SiteVisitingCount() {
 
   const res = await fetch(
     `https://api.counterapi.dev/v2/${workspace}/${counterSlug}/up`,
+    {
+      cache: "no-store",
+    },
   );
 
   const result = await res.json();
