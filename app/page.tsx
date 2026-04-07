@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { ShootingStars } from "@/components/ShootingStars";
 import { StarsBackground } from "@/components/StarsBackground";
 import SiteVisitingCount from "@/components/SiteVisitingCount";
+import Blogs from "@/components/Blogs";
 
 function Home() {
   return (
@@ -15,8 +16,9 @@ function Home() {
         {/* <ShootingStars /> */}
         {/* <StarsBackground starDensity={0.001} /> */}
       </div>
-      <div className="fixed top-4 right-4 z-50">
+      <div className="fixed top-4 right-4 z-50 ">
         <SiteVisitingCount />
+        <Blogs />
       </div>
       <Hero />
 
