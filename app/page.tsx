@@ -17,7 +17,7 @@ function Home() {
         {/* <ShootingStars /> */}
         {/* <StarsBackground starDensity={0.001} /> */}
       </div>
-      <div className="fixed top-4 right-4 z-50 ">
+      <div className="fixed top-4 right-4 z-50 flex flex-col items-end gap-4">
         <SiteVisitingCount />
         <Blogs />
         <DsaQuestionTracker />

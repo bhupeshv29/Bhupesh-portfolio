@@ -1,5 +1,10 @@
+// components/SideFeatureCard.tsx
+
+"use client";
+
 import Link from "next/link";
 import { ReactNode } from "react";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 interface SideFeatureCardProps {
@@ -22,21 +27,61 @@ export function SideFeatureCard({
   className,
 }: SideFeatureCardProps) {
   const content = (
-    <>
+    <motion.div
+      initial="collapsed"
+      animate="collapsed"
+      whileHover="expanded"
+      className={cn(
+        "group relative z-10 flex h-16 items-center overflow-hidden rounded-full border border-zinc-800 bg-gradient-to-br from-zinc-900 via-zinc-950 to-black shadow-[0_0_30px_rgba(255,255,255,0.05)]",
+        className,
+      )}
+      variants={{
+        collapsed: {
+          width: 64,
+        },
+        expanded: {
+          width: 280,
+        },
+      }}
+      transition={{
+        duration: 0.35,
+        ease: "easeInOut",
+      }}
+    >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.08),transparent_40%)]" />
 
-      <div className="relative flex items-center gap-4">
-        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-zinc-800/80 shadow-inner">
+      <div className="relative flex w-full items-center gap-4 px-2">
+        <motion.div
+          className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-zinc-800/80 shadow-inner"
+          whileHover={{ rotate: 8, scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        >
           {icon}
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col">
-          <span className="text-xs uppercase tracking-[0.2em] text-zinc-500">
+        <motion.div
+          className="min-w-0 overflow-hidden whitespace-nowrap"
+          variants={{
+            collapsed: {
+              opacity: 0,
+              x: 20,
+            },
+            expanded: {
+              opacity: 1,
+              x: 0,
+            },
+          }}
+          transition={{
+            duration: 0.2,
+            delay: 0.1,
+          }}
+        >
+          <span className="block text-[10px] uppercase tracking-[0.2em] text-zinc-500">
             {subtitle}
           </span>
 
           <div className="flex items-end gap-2">
-            <span className="text-3xl font-bold text-white">
+            <span className="text-2xl font-bold text-white">
               {value ?? title}
             </span>
 
@@ -44,14 +89,9 @@ export function SideFeatureCard({
               <span className="mb-1 text-sm text-zinc-400">{title}</span>
             )}
           </div>
-        </div>
+        </motion.div>
       </div>
-    </>
-  );
-
-  const commonClassName = cn(
-    "group relative block w-[260px] overflow-hidden rounded-2xl border border-zinc-800 bg-gradient-to-br from-zinc-900 via-zinc-950 to-black px-5 py-4 shadow-[0_0_30px_rgba(255,255,255,0.05)] transition-all duration-300 hover:scale-[1.02] hover:border-zinc-700",
-    className,
+    </motion.div>
   );
 
   if (href) {
@@ -60,12 +100,12 @@ export function SideFeatureCard({
         href={href}
         target={target}
         rel="noopener noreferrer"
-        className={commonClassName}
+        className="inline-block"
       >
         {content}
       </Link>
     );
   }
 
-  return <div className={commonClassName}>{content}</div>;
+  return content;
 }
