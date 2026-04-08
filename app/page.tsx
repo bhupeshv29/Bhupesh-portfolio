@@ -8,6 +8,7 @@ import { ShootingStars } from "@/components/ShootingStars";
 import { StarsBackground } from "@/components/StarsBackground";
 import SiteVisitingCount from "@/components/SiteVisitingCount";
 import Blogs from "@/components/Blogs";
+import DsaQuestionTracker from "@/components/DsaQuestionTracker";
 
 function Home() {
   return (
@@ -17,8 +18,9 @@ function Home() {
         {/* <StarsBackground starDensity={0.001} /> */}
       </div>
       <div className="fixed top-4 right-4 z-50 ">
-        <SiteVisitingCount />
+        {/* <SiteVisitingCount /> */}
         <Blogs />
+        <DsaQuestionTracker />
       </div>
       <Hero />
 
