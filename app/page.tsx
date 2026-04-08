@@ -18,7 +18,7 @@ function Home() {
         {/* <StarsBackground starDensity={0.001} /> */}
       </div>
       <div className="fixed top-4 right-4 z-50 ">
-        {/* <SiteVisitingCount /> */}
+        <SiteVisitingCount />
         <Blogs />
         <DsaQuestionTracker />
       </div>
