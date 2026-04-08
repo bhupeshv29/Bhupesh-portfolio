@@ -3,6 +3,25 @@ import ProjectCardComponent from "./ui/ProjectCard";
 
 const projects = [
   {
+    title: "Uptime",
+    description:
+      "A website to check whether your app or website is live, with monitoring workers, Redis streams, and regional uptime tracking.",
+    image: "/uptime.jpeg",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Redis",
+      "Prisma",
+      "Docker",
+      "TurboRepo",
+      "Tailwind CSS",
+      "Bun",
+    ],
+    githubLink: "https://github.com/bhupeshv29/better-uptime",
+    liveLink: "",
+  },
+  {
     title: "V0 Build",
     description: "Create apps and websites by chatting with AI",
     image: "/v0.png",
