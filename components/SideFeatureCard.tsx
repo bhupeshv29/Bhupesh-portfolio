@@ -44,7 +44,7 @@ export function SideFeatureCard({
         },
       }}
       transition={{
-        duration: 0.35,
+        duration: 0.28,
         ease: "easeInOut",
       }}
     >
