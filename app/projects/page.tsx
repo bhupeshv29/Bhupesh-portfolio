@@ -1,13 +1,11 @@
-import ProjectsComponent from "../../components/Projects"
-
-
+import ProjectsComponent from "../../components/Projects";
 
 function Projects() {
   return (
     <div>
-      <ProjectsComponent/>
+      <ProjectsComponent />
     </div>
-  )
+  );
 }
 
-export default Projects
+export default Projects;

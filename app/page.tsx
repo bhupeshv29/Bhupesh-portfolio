@@ -9,6 +9,7 @@ import { StarsBackground } from "@/components/StarsBackground";
 import SiteVisitingCount from "@/components/SiteVisitingCount";
 import Blogs from "@/components/Blogs";
 import DsaQuestionTracker from "@/components/DsaQuestionTracker";
+import OpenSourceContribution from "@/components/OpenSourceContribution";
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
         <SiteVisitingCount />
         <Blogs />
         <DsaQuestionTracker />
+        <OpenSourceContribution />
       </div>
       <Hero />
 
