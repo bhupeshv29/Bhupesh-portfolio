@@ -8,22 +8,22 @@ const SkillsComponent = () => {
         {[
           {
             title: "Languages",
-            skills: "TypeScript, JavaScript, Python, C++, SQL",
+            skills: "TypeScript, JavaScript, Python, C++",
           },
-          { title: "Backend", skills: "Node.js, Express.js, REST APIs" },
+          { title: "Backend", skills: "Node.js, Express.js, REST APIs, tRPC" },
           {
             title: "Frontend",
             skills:
-              "Next.js, React.js, HTML5, CSS3, Tailwind CSS, Material-UI, Shadcn/ui",
+              "Next.js, React.js, Tailwind CSS, Shadcn/ui",
           },
           {
             title: "DevOps & Cloud",
             skills:
-              "Docker, AWS (EC2, S3, CloudFront), Azure, CI/CD, GitHub Actions",
+              "Docker, AWS (EC2, S3), CI/CD, GitHub Actions",
           },
           {
             title: "Database & Cache",
-            skills: "PostgreSQL, MongoDB, Redis, Prisma ORM",
+            skills: "PostgreSQL, MongoDB, Redis, Prisma ORM, Drizzle ORM",
           },
           { title: "Tools & Security", skills: "Git, JWT, OAuth 2.0, Bcrypt" },
         ].map((item, index) => (
