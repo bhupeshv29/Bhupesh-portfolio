@@ -10,7 +10,7 @@ const SkillsComponent = () => {
             title: "Languages",
             skills: "TypeScript, JavaScript, Python, C++",
           },
-          { title: "Backend", skills: "Node.js, Express.js, REST APIs, tRPC" },
+          { title: "Backend", skills: "Node.js, Express.js, REST APIs, ws" },
           {
             title: "Frontend",
             skills:
@@ -23,7 +23,7 @@ const SkillsComponent = () => {
           },
           {
             title: "Database & Cache",
-            skills: "PostgreSQL, MongoDB, Redis, Prisma ORM, Drizzle ORM",
+            skills: "PostgreSQL, MongoDB, Redis, Prisma ORM",
           },
           { title: "Tools & Security", skills: "Git, JWT, OAuth 2.0, Bcrypt" },
         ].map((item, index) => (
