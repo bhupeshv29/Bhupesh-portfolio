@@ -14,7 +14,7 @@ export default function ProjectCardComponent({
 }: Project) {
   return (
     <GlowCard rounded="2xl">
-      <Card className="h-full flex flex-col justify-between bg-gradient-to-r from-[#0b1016] to-[#1a0a2e] text-white rounded-2xl shadow-md transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+      <Card className="h-full flex flex-col justify-between bg-gradient-to-r from-[#151a24] to-[#2d1a48] text-white rounded-2xl shadow-md transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
         <CardHeader className="p-0">
           <Image
             src={image}

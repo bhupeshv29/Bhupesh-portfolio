@@ -51,7 +51,7 @@ function Contact() {
                 href={link.href}
                 target={link.label !== "Email" ? "_blank" : undefined}
                 rel={link.label !== "Email" ? "noopener noreferrer" : undefined}
-                className="flex items-center gap-4 bg-gradient-to-r from-[#0b1016] to-[#1a0a2e] rounded-xl p-5 text-white hover:scale-[1.02] transition-transform duration-300"
+                className="flex items-center gap-4 bg-gradient-to-r from-[#151a24] to-[#2d1a48] rounded-xl p-5 text-white hover:scale-[1.02] transition-transform duration-300"
               >
                 <link.icon className="text-2xl text-[#792CA2] shrink-0" />
                 <div>
