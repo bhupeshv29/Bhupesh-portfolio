@@ -4,29 +4,15 @@ import ProjectsComponent from "@/components/Projects";
 import SkillsComponent from "@/components/Skills";
 import Skillsliding from "@/components/SkillslidingBanner";
 import Footer from "@/components/Footer";
-import { ShootingStars } from "@/components/ShootingStars";
-import { StarsBackground } from "@/components/StarsBackground";
-import SiteVisitingCount from "@/components/SiteVisitingCount";
-import Blogs from "@/components/Blogs";
-import DsaQuestionTracker from "@/components/DsaQuestionTracker";
-import OpenSourceContribution from "@/components/OpenSourceContribution";
+import FloatingCards from "@/components/FloatingCards";
 
 function Home() {
   return (
-    <div>
-      <div>
-        {/* <ShootingStars /> */}
-        {/* <StarsBackground starDensity={0.001} /> */}
-      </div>
-      <div className="fixed top-4 right-4 z-50 flex flex-col items-end gap-4">
-        <SiteVisitingCount />
-        <Blogs />
-        <DsaQuestionTracker />
-        <OpenSourceContribution />
-      </div>
+    <main>
+      <FloatingCards />
       <Hero />
 
-      <div className="mt-30 mb-10 ">
+      <div className="mt-30 mb-10">
         <GitHubContributions />
       </div>
 
@@ -37,7 +23,7 @@ function Home() {
 
       <Skillsliding />
       <Footer />
-    </div>
+    </main>
   );
 }
 

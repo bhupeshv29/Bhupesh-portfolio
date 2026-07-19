@@ -3,7 +3,7 @@
 "use client";
 
 import Link from "next/link";
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
@@ -26,21 +26,34 @@ export function SideFeatureCard({
   target = "_blank",
   className,
 }: SideFeatureCardProps) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 767px)");
+    setIsMobile(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
+
+  const collapsedWidth = isMobile ? 48 : 64;
+  const expandedWidth = isMobile ? 220 : 280;
+
   const content = (
     <motion.div
       initial="collapsed"
       animate="collapsed"
       whileHover="expanded"
       className={cn(
-        "group relative z-10 flex h-16 items-center overflow-hidden rounded-full border border-zinc-800 bg-gradient-to-br from-zinc-900 via-zinc-950 to-black shadow-[0_0_30px_rgba(255,255,255,0.05)]",
+        "group relative z-10 flex h-12 items-center overflow-hidden rounded-full border border-zinc-800 bg-gradient-to-br from-zinc-900 via-zinc-950 to-black shadow-[0_0_30px_rgba(255,255,255,0.05)] md:h-16",
         className,
       )}
       variants={{
         collapsed: {
-          width: 64,
+          width: collapsedWidth,
         },
         expanded: {
-          width: 280,
+          width: expandedWidth,
         },
       }}
       transition={{
@@ -52,7 +65,7 @@ export function SideFeatureCard({
 
       <div className="relative flex w-full items-center gap-4 px-2">
         <motion.div
-          className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-zinc-800/80 shadow-inner"
+          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-zinc-800/80 shadow-inner md:h-12 md:w-12"
           whileHover={{ rotate: 8, scale: 1.05 }}
           transition={{ duration: 0.2 }}
         >

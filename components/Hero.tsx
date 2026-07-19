@@ -12,16 +12,25 @@ const Hero = () => {
           <Image
             src={bg}
             alt="Background"
+            priority
+            width={1440}
+            height={818}
             className="absolute bottom-0 w-full md:w-5/6 object-contain -z-10"
           />
           <Image
             src={bgsup}
-            alt="Background"
+            alt="Decorative background"
+            width={853}
+            height={730}
+            loading="eager"
             className="absolute top-0 left-0 w-[800px] object-contain -z-10"
           />
           <Image
             src={bgsup}
-            alt="Background"
+            alt="Decorative background"
+            width={853}
+            height={730}
+            loading="eager"
             className="absolute top-0 right-0 w-[800px] object-contain -z-10 scale-x-[-1]"
           />
           <div className="max-w-3xl text-center">
