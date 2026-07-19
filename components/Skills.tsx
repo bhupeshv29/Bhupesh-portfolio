@@ -21,8 +21,8 @@ const SkillsComponent = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {skills.map((item) => (
-          <div key={item.title} className="bg-gradient-to-r from-[#0b1016] to-[#010151] text-white p-5 rounded-xl h-full flex flex-col justify-between shadow-md transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
-              <h3 className="font-bold text-lg mb-2 text-blue-500">
+          <div key={item.title} className="bg-gradient-to-r from-[#0b1016] to-[#1a0a2e] text-white p-5 rounded-xl h-full flex flex-col justify-between shadow-md transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+              <h3 className="font-bold text-lg mb-2 text-[#792CA2]">
                 {item.title}:
               </h3>
               <p className="text-sm">{item.skills}</p>
