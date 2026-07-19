@@ -15,7 +15,7 @@ const skills = [
 
 const SkillsComponent = () => {
   return (
-    <div className="mt-12 bg-gradient-to-br from-[#0b1016] to-[#010151] shadow-lg rounded-lg p-8">
+    <div className="mt-12 shadow-lg rounded-lg p-8">
       <h2 className="text-4xl font-extrabold mb-10 text-center">
         Technical Skills
       </h2>
