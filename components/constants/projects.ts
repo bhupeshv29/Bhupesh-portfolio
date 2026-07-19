@@ -5,10 +5,22 @@ export interface Project {
   technologies: string[];
   githubLink: string;
   liveLink?: string;
+  featured?: boolean;
 }
 
 export const projects: Project[] = [
+
   {
+    title: "BetterUptime",
+    description:
+      "A monitoring tool that allows users to track the uptime of websites and services with real-time notifications.",
+    image: "/uptime.jpeg",
+    technologies: ["Next.js", "Tailwind CSS", "Prisma", "PostgreSQL"],
+    githubLink: "https://github.com/Bhupeshv29/Uptime",
+    liveLink: "https://betteruptime-deployment-fe.vercel.app/",
+    featured: true,
+  },
+    {
     title: "Perps Exchange Platform",
     description:
       "Production-grade perpetual futures trading platform with a real-time matching engine, isolated margin, leverage, liquidation engine, live order book, and sub-second WebSocket updates.",
@@ -24,15 +36,7 @@ export const projects: Project[] = [
       "Docker",
     ],
     githubLink: "https://github.com/bhupeshv29/Perps-Exchange-platform",
-  },
-  {
-    title: "BetterUptime",
-    description:
-      "A monitoring tool that allows users to track the uptime of websites and services with real-time notifications.",
-    image: "/uptime.jpeg",
-    technologies: ["Next.js", "Tailwind CSS", "Prisma", "PostgreSQL"],
-    githubLink: "https://github.com/Bhupeshv29/Uptime",
-    liveLink: "https://betteruptime-deployment-fe.vercel.app/",
+    featured: true,
   },
   {
     title: "V0 Clone",
@@ -51,6 +55,7 @@ export const projects: Project[] = [
     technologies: ["Next.js", "AWS S3", "Prisma", "Tailwind CSS"],
     githubLink: "https://github.com/Bhupeshv29/Droply",
     liveLink: "https://droply.vercel.app/",
+    featured: true,
   },
   {
     title: "Sketchly",
