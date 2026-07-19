@@ -19,16 +19,14 @@ const Hero = () => {
           />
           <Image
             src={bgsup}
-            alt="Background"
-            priority
+            alt="Decorative background"
             width={853}
             height={730}
             className="absolute top-0 left-0 w-[800px] object-contain -z-10"
           />
           <Image
             src={bgsup}
-            alt="Background"
-            priority
+            alt="Decorative background"
             width={853}
             height={730}
             className="absolute top-0 right-0 w-[800px] object-contain -z-10 scale-x-[-1]"

@@ -1,10 +1,10 @@
-import ProjectsComponent from "../../components/Projects";
+import ProjectsComponent from "@/components/Projects";
 
 function Projects() {
   return (
-    <div>
+    <main>
       <ProjectsComponent />
-    </div>
+    </main>
   );
 }
 

@@ -10,20 +10,15 @@ import OpenSourceContribution from "@/components/OpenSourceContribution";
 
 function Home() {
   return (
-    <div>
-      <div>
-        {/* <ShootingStars /> */}
-        {/* <StarsBackground starDensity={0.001} /> */}
-      </div>
+    <main>
       <div className="fixed top-4 right-4 z-50 flex flex-col items-end gap-4">
-        {/* <SiteVisitingCount /> */}
         <Blogs />
         <DsaQuestionTracker />
         <OpenSourceContribution />
       </div>
       <Hero />
 
-      <div className="mt-30 mb-10 ">
+      <div className="mt-30 mb-10">
         <GitHubContributions />
       </div>
 
@@ -34,7 +29,7 @@ function Home() {
 
       <Skillsliding />
       <Footer />
-    </div>
+    </main>
   );
 }
 
