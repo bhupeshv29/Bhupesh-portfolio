@@ -34,8 +34,8 @@ export default function ProjectCardComponent({
               alt={title}
               width={600}
               height={192}
-              className="w-full h-48 object-fill rounded-t-2xl "
-              style={{ width: "100%", height: "12rem" }}
+              className="w-full h-48 object-fill rounded-t-2xl"
+              style={{ width: "100%", height: "auto" }}
             />
           </CardHeader>
           <CardContent className="p-4 flex flex-col flex-grow justify-between">
