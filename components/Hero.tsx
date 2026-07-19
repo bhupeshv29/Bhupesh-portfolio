@@ -1,10 +1,19 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { RainbowButton } from "@/components/magicui/rainbow-button";
 import Image from "next/image";
 import bg from "@/public/assets/hero-bg.svg";
 import bgsup from "@/public/assets/hero-bg-support.svg";
 
 const Hero = () => {
+  const [copied, setCopied] = useState(false);
+
+  const copyEmail = async () => {
+    await navigator.clipboard.writeText("bhupeshverma29bv@gmail.com");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 500);
+  };
   return (
     <div>
       <div className="pt-32 pb-16 md:pt-40 md:pb-24">
@@ -48,7 +57,7 @@ const Hero = () => {
               infrastructure, and AI stack, with a focus on scalable systems,
               real-time applications, and developer tools.
             </p>
-            <div>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href="https://drive.google.com/file/d/17x2b5v0dnDGogpNSkSuEeAMDrxwx9Der/view?usp=sharing"
                 target="_blank"
@@ -58,6 +67,26 @@ const Hero = () => {
                   Resume
                 </RainbowButton>
               </a>
+              <button
+                onClick={copyEmail}
+                className="flex items-center gap-2 px-6 py-3 rounded-full border border-slate-600 text-slate-300 hover:border-blue-500 hover:text-white transition-colors text-sm cursor-pointer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                </svg>
+                {copied ? "Copied!" : "bhupeshverma29bv@gmail.com"}
+              </button>
             </div>
           </div>
         </div>
