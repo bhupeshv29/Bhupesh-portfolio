@@ -26,7 +26,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/bhupeshv29/Perps-Exchange-platform",
   },
   {
-    title: "Uptime",
+    title: "BetterUptime",
     description:
       "A monitoring tool that allows users to track the uptime of websites and services with real-time notifications.",
     image: "/uptime.jpeg",
