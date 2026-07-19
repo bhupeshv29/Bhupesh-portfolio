@@ -22,6 +22,7 @@ const Hero = () => {
             alt="Decorative background"
             width={853}
             height={730}
+            loading="eager"
             className="absolute top-0 left-0 w-[800px] object-contain -z-10"
           />
           <Image
@@ -29,6 +30,7 @@ const Hero = () => {
             alt="Decorative background"
             width={853}
             height={730}
+            loading="eager"
             className="absolute top-0 right-0 w-[800px] object-contain -z-10 scale-x-[-1]"
           />
           <div className="max-w-3xl text-center">
