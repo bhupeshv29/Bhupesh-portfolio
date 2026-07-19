@@ -18,7 +18,7 @@ export default function GlowCard({
     <div className={cn("relative group h-full", className)}>
       <div
         className={cn(
-          "absolute inset-0 bg-gradient-to-br from-[#0d4b91] via-[#0a60b8] to-[#041c3b] blur-lg opacity-25 group-hover:opacity-40 transition duration-500",
+          "absolute inset-0 bg-gradient-to-br from-[#5c2a80] via-[#7d40b5] to-[#2d1a48] blur-lg opacity-25 group-hover:opacity-40 transition duration-500",
           roundedClass
         )}
       />

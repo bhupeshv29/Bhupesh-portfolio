@@ -61,7 +61,7 @@ export const SparklesCore: React.FC<SparklesCoreProps> = (props) => {
           options={{
             background: {
               color: {
-                value: background || "#0d47a1",
+                value: background || "#6a1b9a",
               },
             },
             fullScreen: {

@@ -45,7 +45,7 @@ const Hero = () => {
           <div className="max-w-3xl text-center">
             <h1 className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
               Hi, I&#39;m Bhupesh Verma
-              <span className="block text-blue-500 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
+              <span className="block text-[#9b59b6] drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
                 Full Stack Engineer
               </span>
             </h1>
@@ -69,7 +69,7 @@ const Hero = () => {
               </a>
               <button
                 onClick={copyEmail}
-                className="flex items-center gap-2 px-6 py-3 rounded-full border border-slate-600 text-slate-300 hover:border-blue-500 hover:text-white transition-colors text-sm cursor-pointer"
+                className="flex items-center gap-2 px-6 py-3 rounded-full border border-slate-600 text-slate-300 hover:border-[#9b59b6] hover:text-white transition-colors text-sm cursor-pointer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

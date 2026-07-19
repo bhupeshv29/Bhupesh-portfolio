@@ -41,9 +41,9 @@ export default function Navbar() {
       <div className="container mx-auto px-6 h-16 flex items-center justify-between">
         <Link
           href="/"
-          className="text-lg font-bold text-white tracking-tight hover:text-blue-400 transition-colors"
+          className="text-lg font-bold text-white tracking-tight hover:text-[#9b59b6] transition-colors"
         >
-          bhupesh<span className="text-blue-500">.dev</span>
+          bhupesh<span className="text-[#792CA2]">.dev</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-8">

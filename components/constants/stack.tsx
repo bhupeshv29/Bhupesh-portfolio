@@ -30,17 +30,17 @@ export type stacksProps = Record<
 
 export const FRONTEND_STACKS: stacksProps = {
   JavaScript: { Icon: SiJavascript, className: "text-yellow-400" },
-  TypeScript: { Icon: SiTypescript, className: "text-blue-400" },
+  TypeScript: { Icon: SiTypescript, className: "text-[#9b59b6]" },
   "Next.js": { Icon: SiNextdotjs, className: "" },
   "React.js": { Icon: SiReact, className: "text-sky-500" },
   TailwindCSS: { Icon: SiTailwindcss, className: "text-cyan-300" },
   Bootstrap: { Icon: BsFillBootstrapFill, className: "text-purple-500" },
-  CSS: { Icon: SiCss3, className: "text-blue-500" },
+  CSS: { Icon: SiCss3, className: "text-[#792CA2]" },
   HTML: { Icon: SiHtml5, className: "text-orange-600" },
 };
 
 export const BACKEND_STACKS: stacksProps = {
-  PostgreSQL: { Icon: BiLogoPostgresql, className: "text-blue-500" },
+  PostgreSQL: { Icon: BiLogoPostgresql, className: "text-[#792CA2]" },
   Prisma: { Icon: SiPrisma, className: "text-emerald-500" },
   "Node.js": { Icon: SiNodedotjs, className: "text-green-600" },
   Firebase: { Icon: SiFirebase, className: "text-yellow-500" },
@@ -52,6 +52,6 @@ export const BACKEND_STACKS: stacksProps = {
 };
 
 export const LANGUAGES: stacksProps = {
-  "C++": { Icon: SiCplusplus, className: "text-blue-500" },
+  "C++": { Icon: SiCplusplus, className: "text-[#792CA2]" },
   Python: { Icon: SiPython, className: "text-yellow-300" },
 };

@@ -24,7 +24,7 @@ export default function ProjectsComponent({ showAll = false }: ProjectsProps) {
           <div className="flex justify-center mt-10">
             <Link
               href="/projects"
-              className="text-sm text-slate-400 hover:text-white transition-colors border border-slate-600 hover:border-blue-500 rounded-full px-6 py-2"
+              className="text-sm text-slate-400 hover:text-white transition-colors border border-slate-600 hover:border-[#792CA2] rounded-full px-6 py-2"
             >
               View All Projects &rarr;
             </Link>
