@@ -37,14 +37,16 @@ const Hero = () => {
             <h1 className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
               Hi, I&#39;m Bhupesh Verma
               <span className="block text-blue-500 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
-                Full Stack Developer
+                Full Stack Engineer
               </span>
             </h1>
+            <p className="text-xs text-slate-400 mb-4 drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)] mx-10 tracking-widest uppercase">
+              Backend Systems · Infrastructure · Applied AI
+            </p>
             <p className="text-sm text-slate-400 mb-8 drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)] mx-10 ">
-              I’m a full-stack developer from India. I love turning ideas into
-              working web apps. Whether you need help building a new project or
-              improving an old one, I’m here to write clean and simple code to
-              make your ideas real.
+              Building production-grade software across the frontend, backend,
+              infrastructure, and AI stack, with a focus on scalable systems,
+              real-time applications, and developer tools.
             </p>
             <div>
               <a
