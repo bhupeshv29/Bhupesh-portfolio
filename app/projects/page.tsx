@@ -3,7 +3,9 @@ import ProjectsComponent from "@/components/Projects";
 function Projects() {
   return (
     <main>
-      <ProjectsComponent />
+      <div className="pt-24">
+        <ProjectsComponent showAll={true} />
+      </div>
     </main>
   );
 }

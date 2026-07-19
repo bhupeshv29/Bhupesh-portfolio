@@ -15,7 +15,9 @@ export default function FloatingCards() {
       {/* Hamburger button - mobile only */}
       <button
         onClick={() => setOpen((o) => !o)}
-        className="fixed top-4 right-4 z-50 flex h-12 w-12 items-center justify-center rounded-full border border-zinc-800 bg-zinc-900 shadow-lg md:hidden"
+        onMouseEnter={() => setOpen(true)}
+        onMouseLeave={() => setOpen(false)}
+        className="fixed top-30 right-4 z-50 flex h-12 w-12 items-center justify-center rounded-full border border-zinc-800 bg-zinc-900 shadow-lg md:hidden"
         aria-label="Toggle menu"
       >
         {open ? (
@@ -33,7 +35,9 @@ export default function FloatingCards() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.2 }}
-            className="fixed top-20 right-4 z-50 flex flex-col items-end gap-3 md:hidden"
+            onMouseEnter={() => setOpen(true)}
+            onMouseLeave={() => setOpen(false)}
+            className="fixed top-44 right-4 z-50 flex flex-col items-end gap-3 md:hidden"
           >
             <Blogs />
             <DsaQuestionTracker />
@@ -42,7 +46,7 @@ export default function FloatingCards() {
         )}
       </AnimatePresence>
 
-      <div className="hidden md:fixed md:bottom-auto md:right-4 md:top-4 md:z-50 md:flex md:flex-col md:items-end md:gap-4">
+      <div className="hidden md:fixed md:bottom-auto md:right-4 md:top-36 md:z-50 md:flex md:flex-col md:items-end md:gap-4">
         <Blogs />
         <DsaQuestionTracker />
         <OpenSourceContribution />

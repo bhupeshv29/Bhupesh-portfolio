@@ -1,7 +1,14 @@
+import Link from "next/link";
 import ProjectCardComponent from "./ui/ProjectCard";
 import { projects } from "./constants/projects";
 
-export default function ProjectsComponent() {
+interface ProjectsProps {
+  showAll?: boolean;
+}
+
+export default function ProjectsComponent({ showAll = false }: ProjectsProps) {
+  const displayed = showAll ? projects : projects.filter((p) => p.featured);
+
   return (
     <section id="projects" className="py-16">
       <div className="container px-6">
@@ -9,10 +16,20 @@ export default function ProjectsComponent() {
           Featured Projects
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
-          {projects.map((project) => (
+          {displayed.map((project) => (
             <ProjectCardComponent key={project.title} {...project} />
           ))}
         </div>
+        {!showAll && (
+          <div className="flex justify-center mt-10">
+            <Link
+              href="/projects"
+              className="text-sm text-slate-400 hover:text-white transition-colors border border-slate-600 hover:border-blue-500 rounded-full px-6 py-2"
+            >
+              View All Projects &rarr;
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

@@ -17,7 +17,7 @@ function Home() {
       </div>
 
       <div className="px-4 md:px-8 lg:px-30">
-        <ProjectsComponent />
+        <ProjectsComponent showAll={false} />
         <SkillsComponent />
       </div>
 
