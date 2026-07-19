@@ -7,9 +7,9 @@ import { RainbowButton } from "@/components/magicui/rainbow-button";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Projects", href: "/#projects" },
-  { label: "Skills", href: "/#skills" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Projects", href: "/projects" },
+  { label: "Skills", href: "/skills" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const socialLinks = {
