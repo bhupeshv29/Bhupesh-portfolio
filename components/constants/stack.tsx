@@ -2,7 +2,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { BsFillBootstrapFill, BsRobot } from "react-icons/bs";
 import { IconType } from "react-icons/lib";
 import {
-  SiCss,
+  SiCss3,
   SiExpress,
   SiFirebase,
   SiJavascript,
@@ -35,7 +35,7 @@ export const FRONTEND_STACKS: stacksProps = {
   "React.js": { Icon: SiReact, className: "text-sky-500" },
   TailwindCSS: { Icon: SiTailwindcss, className: "text-cyan-300" },
   Bootstrap: { Icon: BsFillBootstrapFill, className: "text-purple-500" },
-  CSS: { Icon: SiCss, className: "text-[#792CA2]" },
+  CSS: { Icon: SiCss3, className: "text-[#792CA2]" },
   HTML: { Icon: SiHtml5, className: "text-orange-600" },
 };
 
