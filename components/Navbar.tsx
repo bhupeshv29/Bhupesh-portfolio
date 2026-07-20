@@ -4,12 +4,14 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { RainbowButton } from "@/components/magicui/rainbow-button";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Projects", href: "/projects" },
   { label: "Skills", href: "/skills" },
   { label: "Contact", href: "/contact" },
+  { label: "Blogs", href: "https://bhupeshv29.hashnode.dev/", external: true },
 ];
 
 const socialLinks = {
@@ -20,6 +22,7 @@ const socialLinks = {
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -48,6 +51,7 @@ export default function Navbar() {
             <Link
               key={link.label}
               href={link.href}
+              {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className="text-sm text-slate-400 hover:text-white transition-colors"
             >
               {link.label}
@@ -91,8 +95,34 @@ export default function Navbar() {
               Resume
             </RainbowButton>
           </Link>
+
+          <button
+            onClick={() => setMobileOpen((o) => !o)}
+            className="flex md:hidden items-center justify-center text-slate-400 hover:text-white transition-colors"
+            aria-label="Toggle menu"
+          >
+            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
         </div>
       </div>
+
+      {mobileOpen && (
+        <div className="md:hidden bg-black/90 backdrop-blur-md border-t border-white/10">
+          <div className="container mx-auto px-6 py-4 flex flex-col gap-4">
+            {navLinks.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                onClick={() => setMobileOpen(false)}
+                className="text-sm text-slate-400 hover:text-white transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
   );
 }

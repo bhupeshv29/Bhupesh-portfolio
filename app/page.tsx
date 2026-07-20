@@ -4,12 +4,10 @@ import ProjectsComponent from "@/components/Projects";
 import SkillsComponent from "@/components/Skills";
 import Skillsliding from "@/components/SkillslidingBanner";
 import Footer from "@/components/Footer";
-import FloatingCards from "@/components/FloatingCards";
 
 function Home() {
   return (
     <main>
-      <FloatingCards />
       <Hero />
 
       <div className="mt-30 mb-10">
