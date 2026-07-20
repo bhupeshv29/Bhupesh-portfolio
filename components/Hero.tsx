@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { RainbowButton } from "@/components/magicui/rainbow-button";
 import Image from "next/image";
+import Link from "next/link";
 import bg from "@/public/assets/hero-bg.svg";
 import bgsup from "@/public/assets/hero-bg-support.svg";
 
@@ -58,15 +59,11 @@ const Hero = () => {
               real-time applications, and developer tools.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a
-                href="https://drive.google.com/file/d/17x2b5v0dnDGogpNSkSuEeAMDrxwx9Der/view?usp=sharing"
-                target="_blank"
-                download="bhupesh_resume.pdf"
-              >
+              <Link href="/resume">
                 <RainbowButton variant="outline" size="lg">
                   Resume
                 </RainbowButton>
-              </a>
+              </Link>
               <button
                 onClick={copyEmail}
                 className="flex items-center gap-2 px-6 py-3 rounded-full border border-slate-600 text-slate-300 hover:border-[#9b59b6] hover:text-white transition-colors text-sm cursor-pointer"

@@ -1,9 +1,21 @@
+import type { Metadata } from "next";
 import {
   FaEnvelope,
   FaTwitter,
   FaLinkedin,
   FaGithub,
 } from "react-icons/fa";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Get in touch with Bhupesh Verma — Full Stack Developer. Reach out via email, GitHub, LinkedIn, or Twitter.",
+  openGraph: {
+    title: "Contact | Bhupesh Verma",
+    description:
+      "Get in touch with Bhupesh Verma — Full Stack Developer.",
+  },
+};
 
 const socialLinks = [
   {

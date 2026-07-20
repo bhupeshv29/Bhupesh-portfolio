@@ -18,9 +18,6 @@ const socialLinks = {
   twitter: "https://x.com/Bhupeshv29",
 };
 
-const resumeLink =
-  "https://drive.google.com/file/d/17x2b5v0dnDGogpNSkSuEeAMDrxwx9Der/view?usp=sharing";
-
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
@@ -89,11 +86,11 @@ export default function Navbar() {
             </a>
           </div>
 
-          <a href={resumeLink} target="_blank" rel="noopener noreferrer">
+          <Link href="/resume">
             <RainbowButton variant="outline" size="sm">
               Resume
             </RainbowButton>
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

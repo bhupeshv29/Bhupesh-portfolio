@@ -11,21 +11,59 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
+const SITE_URL = "https://bhupeshverma.vercel.app";
+
 export const metadata: Metadata = {
-  title: "Bhupesh Verma | Full Stack Developer",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Bhupesh Verma | Full Stack Developer — Backend, AI & Infrastructure",
+    template: "%s | Bhupesh Verma",
+  },
   description:
-    "Portfolio of Bhupesh Verma, a full-stack developer from India. Building clean and simple web apps with Next.js, React, and Node.js.",
+    "Bhupesh Verma — Full Stack Developer specializing in backend systems, infrastructure, and applied AI. Building production-grade software with Next.js, React, Node.js, Python, and cloud-native architectures.",
+  keywords: [
+    "Bhupesh Verma",
+    "Full Stack Developer",
+    "Backend Engineer",
+    "Software Engineer India",
+    "Next.js Developer",
+    "React Developer",
+    "Node.js Developer",
+    "Python Developer",
+    "Cloud Infrastructure",
+    "AI Engineer",
+    "Portfolio",
+  ],
+  authors: [{ name: "Bhupesh Verma" }],
+  creator: "Bhupesh Verma",
   openGraph: {
-    title: "Bhupesh Verma | Full Stack Developer",
-    description:
-      "Portfolio of Bhupesh Verma, a full-stack developer from India.",
     type: "website",
+    locale: "en_US",
+    url: SITE_URL,
+    siteName: "Bhupesh Verma — Portfolio",
+    title: "Bhupesh Verma | Full Stack Developer — Backend, AI & Infrastructure",
+    description:
+      "Full Stack Developer specializing in backend systems, infrastructure, and applied AI. Building production-grade software with Next.js, React, Node.js, and cloud-native architectures.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Bhupesh Verma | Full Stack Developer",
     description:
-      "Portfolio of Bhupesh Verma, a full-stack developer from India.",
+      "Full Stack Developer specializing in backend systems, infrastructure, and applied AI.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: SITE_URL,
   },
 };
 
@@ -36,6 +74,37 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning={true}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Bhupesh Verma",
+              url: SITE_URL,
+              jobTitle: "Full Stack Developer",
+              description:
+                "Full Stack Developer specializing in backend systems, infrastructure, and applied AI.",
+              sameAs: [
+                "https://github.com/bhupeshv29",
+                "https://www.linkedin.com/in/bhupesh-verma-684991198/",
+                "https://x.com/Bhupeshv29",
+              ],
+              knowsAbout: [
+                "Full Stack Development",
+                "Backend Engineering",
+                "Next.js",
+                "React",
+                "Node.js",
+                "Python",
+                "Cloud Infrastructure",
+                "Artificial Intelligence",
+              ],
+            }),
+          }}
+        />
+      </head>
       <body className={`${geistSans.variable} antialiased`}>
         <Navbar />
         <SocialDock />
