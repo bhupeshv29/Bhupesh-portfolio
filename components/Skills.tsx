@@ -1,6 +1,6 @@
 const skills = [
   { title: "Languages", skills: "TypeScript, JavaScript, Python, C++" },
-  { title: "Backend", skills: "Node.js, Express.js, REST APIs, ws" },
+  { title: "Backend", skills: "Node.js, Express.js, REST APIs, Ws" },
   { title: "Frontend", skills: "Next.js, React.js, Tailwind CSS, Shadcn/ui" },
   {
     title: "DevOps & Cloud",
@@ -10,6 +10,7 @@ const skills = [
     title: "Database & Cache",
     skills: "PostgreSQL, MongoDB, Redis, Prisma ORM",
   },
+  { title: "Distributed Systems", skills: "Redis, Pub/Sub, Stream " },
   { title: "Tools & Security", skills: "Git, JWT, OAuth 2.0, Bcrypt" },
 ];
 
@@ -21,12 +22,15 @@ const SkillsComponent = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {skills.map((item) => (
-          <div key={item.title} className="bg-gradient-to-r from-[#151a24] to-[#2d1a48] text-white p-5 rounded-xl h-full flex flex-col justify-between shadow-md transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
-              <h3 className="font-bold text-lg mb-2 text-[#792CA2]">
-                {item.title}:
-              </h3>
-              <p className="text-sm">{item.skills}</p>
-            </div>
+          <div
+            key={item.title}
+            className="bg-gradient-to-r from-[#151a24] to-[#2d1a48] text-white p-5 rounded-xl h-full flex flex-col justify-between shadow-md transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+          >
+            <h3 className="font-bold text-lg mb-2 text-[#792CA2]">
+              {item.title}:
+            </h3>
+            <p className="text-sm">{item.skills}</p>
+          </div>
         ))}
       </div>
     </div>
