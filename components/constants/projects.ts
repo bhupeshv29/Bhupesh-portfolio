@@ -9,7 +9,6 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-
   {
     title: "BetterUptime",
     description:
@@ -20,7 +19,7 @@ export const projects: Project[] = [
     liveLink: "https://betteruptime-deployment-fe.vercel.app/",
     featured: true,
   },
-    {
+  {
     title: "Perps Exchange Platform",
     description:
       "Production-grade perpetual futures trading platform with a real-time matching engine, isolated margin, leverage, liquidation engine, live order book, and sub-second WebSocket updates.",
@@ -39,18 +38,24 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    title: "V0 Clone",
+    title: "Live Support Chat system",
     description:
-      "A clone of V0, an AI-powered UI generation tool using shadcn/ui components and Tailwind CSS.",
-    image: "/v0.png",
-    technologies: ["Next.js", "Shadcn/ui", "Tailwind CSS", "OpenAI"],
-    githubLink: "https://github.com/Bhupeshv29/v0-clone",
-    liveLink: "https://v0-clone-kohl.vercel.app/",
+    "Role-based live support desk: candidates open tickets, supervisors assign agents from their team, agents chat in real time and close threads, and admins manage org structure and analytics.",
+    image: "/supportdesk.jpg",
+    technologies: [
+      "React.js",
+      "TypeScript",
+      "Express.js",
+      "PostgreSQL",
+      "WebSockets",
+    ],
+    githubLink: "https://github.com/bhupeshv29/LiveSupportChatSystemRealTimeChat.git",
+    liveLink: "https://live-support-chat-system-real-time.vercel.app/",
   },
   {
     title: "Droply",
     description:
-      "A file-sharing platform enabling users to upload, manage, and share files securely with others.",
+    "A file-sharing platform enabling users to upload, manage, and share files securely with others.",
     image: "/droply.png",
     technologies: ["Next.js", "AWS S3", "Prisma", "Tailwind CSS"],
     githubLink: "https://github.com/Bhupeshv29/Droply",
@@ -60,11 +65,20 @@ export const projects: Project[] = [
   {
     title: "Sketchly",
     description:
-      "A real-time collaborative drawing app with a clean UI for brainstorming and sketching ideas together.",
+    "A real-time collaborative drawing app with a clean UI for brainstorming and sketching ideas together.",
     image: "/sketchly.jpg",
     technologies: ["React.js", "Socket.io", "Canvas API", "Node.js"],
     githubLink: "https://github.com/Bhupeshv29/Sketchly",
     liveLink: "https://sketchly.vercel.app/",
+  },
+  {
+    title: "V0 Clone",
+    description:
+      "A clone of V0, an AI-powered UI generation tool using shadcn/ui components and Tailwind CSS.",
+    image: "/v0.png",
+    technologies: ["Next.js", "Shadcn/ui", "Tailwind CSS", "OpenAI"],
+    githubLink: "https://github.com/Bhupeshv29/v0-clone",
+    liveLink: "https://v0-clone-kohl.vercel.app/",
   },
   {
     title: "CourseHub",
