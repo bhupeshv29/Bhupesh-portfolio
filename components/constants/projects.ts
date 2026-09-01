@@ -13,7 +13,7 @@ export const projects: Project[] = [
     title: "BetterUptime",
     description:
       "A monitoring tool that allows users to track the uptime of websites and services with real-time notifications.",
-    image: "/uptime.jpeg",
+    image: "/uptime.webp",
     technologies: ["Next.js", "Tailwind CSS", "Prisma", "PostgreSQL"],
     githubLink: "https://github.com/Bhupeshv29/Uptime",
     liveLink: "https://betteruptime-deployment-fe.vercel.app/",
@@ -24,7 +24,7 @@ export const projects: Project[] = [
     description:
       "Production-grade perpetual futures trading platform with a real-time matching engine, isolated margin, leverage, liquidation engine, live order book, and sub-second WebSocket updates.",
 
-    image: "/perps-exchange.png",
+    image: "/perps-exchange.webp",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     title: "Live Support Chat system",
     description:
       "Role-based live support desk: candidates open tickets, supervisors assign agents from their team, agents chat in real time and close threads, and admins manage org structure and analytics.",
-    image: "/supportdesk.jpg",
+    image: "/supportdesk.webp",
     technologies: [
       "React.js",
       "TypeScript",
@@ -58,7 +58,7 @@ export const projects: Project[] = [
     title: "Droply",
     description:
       "A file-sharing platform enabling users to upload, manage, and share files securely with others.",
-    image: "/droply.png",
+    image: "/droply.webp",
     technologies: ["Next.js", "AWS S3", "Prisma", "Tailwind CSS"],
     githubLink: "https://github.com/Bhupeshv29/Droply",
     liveLink: "https://droply.vercel.app/",
@@ -67,7 +67,7 @@ export const projects: Project[] = [
     title: "Sketchly",
     description:
       "A real-time collaborative drawing app with a clean UI for brainstorming and sketching ideas together.",
-    image: "/sketchly.jpg",
+    image: "/sketchly.webp",
     technologies: ["React.js", "Socket.io", "Canvas API", "Node.js"],
     githubLink: "https://github.com/Bhupeshv29/Sketchly",
     liveLink: "https://sketchly.vercel.app/",
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     title: "V0 Clone",
     description:
       "A clone of V0, an AI-powered UI generation tool using shadcn/ui components and Tailwind CSS.",
-    image: "/v0.png",
+    image: "/v0.webp",
     technologies: ["Next.js", "Shadcn/ui", "Tailwind CSS", "OpenAI"],
     githubLink: "https://github.com/Bhupeshv29/v0-clone",
     liveLink: "https://v0-clone-kohl.vercel.app/",
@@ -85,7 +85,7 @@ export const projects: Project[] = [
     title: "CourseHub",
     description:
       "A course management platform for browsing, enrolling, and tracking progress across various online courses.",
-    image: "/courseHub.jpg",
+    image: "/courseHub.webp",
     technologies: ["Next.js", "MongoDB", "Tailwind CSS", "Clerk Auth"],
     githubLink: "https://github.com/Bhupeshv29/CourseHub",
     liveLink: "https://course-hub-xi.vercel.app/",
@@ -94,7 +94,7 @@ export const projects: Project[] = [
     title: "Chat App",
     description:
       "A real-time chat application supporting one-on-one and group messaging with a modern interface.",
-    image: "/chatapp.jpg",
+    image: "/chatapp.webp",
     technologies: ["React.js", "Socket.io", "Express.js", "MongoDB"],
     githubLink: "https://github.com/Bhupeshv29/chat-app",
     liveLink: "https://chat-app-weld-two.vercel.app/",
@@ -103,7 +103,7 @@ export const projects: Project[] = [
     title: "InfinteBrain",
     description:
       "An AI-powered tool to help users generate and organize creative ideas for content and projects.",
-    image: "/infintebrain.jpg",
+    image: "/infintebrain.webp",
     technologies: ["Next.js", "OpenAI", "Tailwind CSS", "Prisma"],
     githubLink: "https://github.com/Bhupeshv29/infintebrain",
     liveLink: "https://infintebrain.vercel.app/",
