@@ -19,10 +19,11 @@ export default function ProjectCardComponent({
           <Image
             src={image}
             alt={title}
-            width={600}
-            height={192}
+            width={700}
+            height={280}
+            quality={75}
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="w-full h-48 object-cover rounded-t-2xl"
-            style={{ width: "100%", height: "auto" }}
           />
         </CardHeader>
         <CardContent className="p-4 flex flex-col flex-grow justify-between">
