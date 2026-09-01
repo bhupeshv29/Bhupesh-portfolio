@@ -40,7 +40,7 @@ export const projects: Project[] = [
   {
     title: "Live Support Chat system",
     description:
-    "Role-based live support desk: candidates open tickets, supervisors assign agents from their team, agents chat in real time and close threads, and admins manage org structure and analytics.",
+      "Role-based live support desk: candidates open tickets, supervisors assign agents from their team, agents chat in real time and close threads, and admins manage org structure and analytics.",
     image: "/supportdesk.jpg",
     technologies: [
       "React.js",
@@ -49,23 +49,24 @@ export const projects: Project[] = [
       "PostgreSQL",
       "WebSockets",
     ],
-    githubLink: "https://github.com/bhupeshv29/LiveSupportChatSystemRealTimeChat.git",
+    githubLink:
+      "https://github.com/bhupeshv29/LiveSupportChatSystemRealTimeChat.git",
     liveLink: "https://live-support-chat-system-real-time.vercel.app/",
+    featured: true,
   },
   {
     title: "Droply",
     description:
-    "A file-sharing platform enabling users to upload, manage, and share files securely with others.",
+      "A file-sharing platform enabling users to upload, manage, and share files securely with others.",
     image: "/droply.png",
     technologies: ["Next.js", "AWS S3", "Prisma", "Tailwind CSS"],
     githubLink: "https://github.com/Bhupeshv29/Droply",
     liveLink: "https://droply.vercel.app/",
-    featured: true,
   },
   {
     title: "Sketchly",
     description:
-    "A real-time collaborative drawing app with a clean UI for brainstorming and sketching ideas together.",
+      "A real-time collaborative drawing app with a clean UI for brainstorming and sketching ideas together.",
     image: "/sketchly.jpg",
     technologies: ["React.js", "Socket.io", "Canvas API", "Node.js"],
     githubLink: "https://github.com/Bhupeshv29/Sketchly",

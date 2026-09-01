@@ -1,4 +1,4 @@
-import Link from "next/link";
+ import Link from "next/link";
 import ProjectCardComponent from "./ui/ProjectCard";
 import { projects } from "./constants/projects";
 
