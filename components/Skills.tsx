@@ -1,16 +1,16 @@
 const skills = [
   { title: "Languages", skills: "TypeScript, JavaScript, Python, C++" },
-  { title: "Backend", skills: "Node.js, Express.js, REST APIs, Ws" },
-  { title: "Frontend", skills: "Next.js, React.js, Tailwind CSS, Shadcn/ui" },
+  { title: "Backend", skills: "Node.js, Express.js, REST APIs, WebSockets" },
+  { title: "Frontend", skills: "Next.js, React.js, Tailwind CSS, Shadcn/ui, Zustand" },
   {
     title: "DevOps & Cloud",
-    skills: "Docker, AWS (EC2, S3), CI/CD, GitHub Actions",
+    skills: "Docker, AWS (EC2, S3), CI/CD, GitHub Actions, Nginx, Bash, Pm2",
   },
   {
     title: "Database & Cache",
     skills: "PostgreSQL, MongoDB, Redis, Prisma ORM",
   },
-  { title: "Distributed Systems", skills: "Redis, Pub/Sub, Stream " },
+  { title: "Distributed Systems", skills: "Redis, Pub/Sub, Stream, BullMQ, RabbitMQ " },
   { title: "Tools & Security", skills: "Git, JWT, OAuth 2.0, Bcrypt" },
 ];
 
