@@ -10,15 +10,16 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "BetterUptime",
+    title: "Prompt Pilot",
     description:
-      "A monitoring tool that allows users to track the uptime of websites and services with real-time notifications.",
-    image: "/uptime.webp",
-    technologies: ["Next.js", "Tailwind CSS", "Prisma", "PostgreSQL"],
-    githubLink: "https://github.com/bhupeshv29/better-uptime",
-    liveLink: "https://betteruptime-deployment-fe.vercel.app/",
+      "Turn prompts into live React apps. Type what you want, an AI agent writes and edits code in an isolated cloud sandbox, and you see a live preview instantly — like Lovable, self-hosted.",
+    image: "/promptPilot.webp",
+    technologies: ["React.js", "TypeScript", "Express.js", "PostgreSQL"],
+    githubLink: "https://github.com/bhupeshv29/Prompt-pilot",
+    liveLink: "https://prompt-pilot-kappa-azure.vercel.app/",
     featured: true,
   },
+
   {
     title: "Perps Exchange Platform",
     description:
@@ -54,6 +55,17 @@ export const projects: Project[] = [
     liveLink: "https://live-support-chat-system-real-time.vercel.app/",
     featured: true,
   },
+  {
+    title: "BetterUptime",
+    description:
+      "A monitoring tool that allows users to track the uptime of websites and services with real-time notifications.",
+    image: "/uptime.webp",
+    technologies: ["Next.js", "Tailwind CSS", "Prisma", "PostgreSQL"],
+    githubLink: "https://github.com/bhupeshv29/better-uptime",
+    liveLink: "https://betteruptime-deployment-fe.vercel.app/",
+
+  },
+
   {
     title: "Droply",
     description:

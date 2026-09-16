@@ -10,8 +10,8 @@ export default function ProjectsComponent({ showAll = false }: ProjectsProps) {
   const displayed = showAll ? projects : projects.filter((p) => p.featured);
 
   return (
-    <section id="projects" className="py-16">
-      <div className="container px-6">
+    <section id="projects" className="py-16 w-full flex justify-center">
+      <div className="w-full max-w-7xl mx-auto px-6">
         <h2 className="text-3xl font-bold flex justify-center mb-10">
           Featured Projects
         </h2>
