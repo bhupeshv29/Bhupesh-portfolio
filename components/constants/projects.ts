@@ -36,6 +36,7 @@ export const projects: Project[] = [
       "Docker",
     ],
     githubLink: "https://github.com/bhupeshv29/Perps-Exchange-platform",
+    liveLink:"https://perp-trading-render.vercel.app/",
     featured: true,
   },
   {
